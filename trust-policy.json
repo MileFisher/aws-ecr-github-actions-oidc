@@ -4,18 +4,13 @@
     {
       "Effect": "Allow",
       "Principal": {
-        "Federated": "arn:aws:iam::302726987033:oidc-provider/token.actions.githubusercontent.com"
+        "Federated": "arn:aws:iam::302726987033:user/OIDCtest:oidc-provider/token.actions.githubusercontent.com"
       },
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
         "StringEquals": {
-          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
-        },
-        "StringLike": {
-          "token.actions.githubusercontent.com:sub": [
-            "repo:MileFisher@155565639/aws-ecr-github-actions-oidc@1355776371:*",
-            "repo:MileFisher/aws-ecr-github-actions-oidc:*"
-          ]
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+          "token.actions.githubusercontent.com:sub": "repo:MileFisher/aws-ecr-github-actions-oidc:ref:refs/heads/main"
         }
       }
     }
