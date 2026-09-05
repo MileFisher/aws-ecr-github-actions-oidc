@@ -9,8 +9,8 @@ Instead of storing long-term AWS Access Keys inside GitHub Secrets, GitHub Actio
 # Step 1 - Set Environment Variables
 
 ```bash
-export AWS_REGION="ap-southeast-1"
-export GITHUB_USER="thaunghtike-share" ## Replace Your GitHub Username or Org Name
+export AWS_REGION="eu-north-1"
+export GITHUB_USER="milefisher" ## Replace Your GitHub Username or Org Name
 export GITHUB_REPO="aws-ecr-github-actions-oidc"
 export ROLE_NAME="github-actions-ecr-role"
 
