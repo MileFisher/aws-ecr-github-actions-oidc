@@ -58,7 +58,7 @@ cat > trust-policy.json <<EOF
     {
       "Effect": "Allow",
       "Principal": {
-        "Federated": "arn:aws:iam::$AWS_ACCOUNT_ID:oidc-provider/token.actions.githubusercontent.com"
+        "Federated": "arn:aws:iam::302726987033:user/OIDCtest:oidc-provider/token.actions.githubusercontent.com"
       },
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
